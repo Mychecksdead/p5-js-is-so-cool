@@ -2,7 +2,7 @@ let time = 0, average_ball = 0;
 var s1 = (s) => {
     let circles = [];
     s.setup = () => {
-        let canvas1 = s.createCanvas(400, 400);
+        let canvas1 = s.createCanvas(s.windowWidth, s.windowHeight/2);
         canvas1.position(0, 0);
         s.stroke(255);
         s.fill(255);
@@ -33,8 +33,8 @@ var s1 = (s) => {
 
 var s2 = (s) => {
     s.setup = () => {
-        let canvas2 = s.createCanvas(1000, 400);
-        canvas2.position(0, 450);
+        let canvas2 = s.createCanvas(s.windowWidth, s.windowHeight/2);
+        canvas2.position(0, s.windowHeight/2);
         s.stroke(255);
         s.fill(255);
         s.background(0); 
